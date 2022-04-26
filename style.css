@@ -1,0 +1,88 @@
+:root {
+  --def-border: 1px solid lightgrey;
+  --def-gap: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.disabled {
+  opacity: 0.2;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  width: 100%;
+  gap: var(--def-gap);
+}
+
+#board {
+  flex: 0 0 calc(100vh - 32px);
+  aspect-ratio: 1/1;
+  border-collapse: collapse;
+}
+
+.board__field {
+  border: var(--def-border);
+  cursor: pointer;
+}
+
+.board__field--disabled {
+  cursor: not-allowed;
+  border: 1px solid transparent;
+}
+
+#info {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--def-gap);
+}
+
+#scoreboard {
+  max-height: 400px;
+  border: var(--def-border);
+  padding: 10px;
+  overflow: auto;
+}
+
+#scoreboard > table {
+  width: 100%;
+  text-align: center;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+#controls > img {
+  width: 120px;
+  padding: 20px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
