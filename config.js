@@ -6,9 +6,12 @@ const minimalDiceAnimationDuration = 2 * 1000
 
 const finishAnimationDelay = 0.01 * 1000
 
+const playersCountLimit = [2, 4]
+
 export {
     ideoApiKey,
     diceAnimationInterval,
     minimalDiceAnimationDuration,
-    finishAnimationDelay
+    finishAnimationDelay,
+    playersCountLimit
 }
