@@ -7,7 +7,7 @@ let intervalId = null
 let lastDiceValue = 1
 
 const setDiceValue = (value) => {
-  el.src = `img/d${value}.svg`
+  el.src = `/img/d${value}.svg`
 }
 
 const startDiceAnimation = () => {
